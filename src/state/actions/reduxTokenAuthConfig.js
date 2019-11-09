@@ -1,7 +1,9 @@
 import { generateAuthActions } from 'redux-token-auth';
 
+// "http://localhost:3000/auth"
+
 const config = {
-  authUrl: "http://localhost:3000/auth",
+  authUrl: "https://fake-news-api.herokuapp.com/auth",
   userAttributes: {
     uid: "uid",
     email: "email",

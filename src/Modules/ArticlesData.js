@@ -1,7 +1,9 @@
 import axios from 'axios'
 import getCurrentCredentials from './GetCredentials'
 
-const apiUrl = 'http://localhost:3000/v1/'
+// 'http://localhost:3000/v1/'
+
+const apiUrl = 'https://fake-news-api.herokuapp.com/v1/'
 
 const getArticles = async () => {
   try {

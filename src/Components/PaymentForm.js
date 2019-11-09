@@ -30,9 +30,11 @@ class PaymentForm extends Component {
     })
   }
 
+  // 'http://localhost:3000/v1/payments'
+
   payment = async stripeToken => {
     try {
-      let response = await axios.post('http://localhost:3000/v1/payments', {
+      let response = await axios.post('https://fake-news-api.herokuapp.com/v1/payments', {
         stripeToken
       },
         { headers: getCredentials() }
